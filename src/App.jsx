@@ -73,12 +73,17 @@ function App() {
         />
       </div>
       <div className="top-container">
-        <div className="temp">
-          {data.main ? <p style={mystyle}>{data.main.temp.toFixed()}°C</p> : null}
+        <div className="name">
+          <p style={{color:'white', paddingLeft:'1rem', fontSize:'25px'}}> {data ? data.name : null } </p>
         </div>
-        <div>
-          <img style={{paddingBottom:'.5rem'}} src={weatherIconUrl} width='50px'/>
-          <p style={{margin:'0', color:'white'}}> {data.weather?.[0]?.main} </p>
+        <div className="values">
+          <div className="temp">
+            {data.main ? <p style={mystyle}>{data.main.temp.toFixed()}°C</p> : null}
+          </div>
+          <div>
+            <img style={{paddingBottom:'.5rem'}} src={weatherIconUrl} width='50px'/>
+            <p style={{margin:'0', color:'white', paddingLeft:'.5rem'}}> {data.weather?.[0]?.main} </p>
+          </div>
         </div>
       </div>
     </div>
