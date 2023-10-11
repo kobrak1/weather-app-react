@@ -8,6 +8,7 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 .app {
@@ -17,17 +18,65 @@ body {
     max-width: 30%;
     height: 530px;
     margin: 0 auto;
-    margin-top: 2rem;
     background-color: rgb(211, 211, 211, .2);
     border-radius: 1rem;
+    backdrop-filter: blur(15px);
+    position: relative;
+    top: 5rem;
   }
 
   .app .search input {
     border-radius: 1rem;
     border: none;
+    border-color: rgb(233, 236, 239);
     background-color: rgba(72, 72, 72, 0.2);
     height: 2rem;
-    padding-left: .7rem;
+    width: 15rem;
+    padding-left: 1rem;
     margin: 3rem 0 2rem 0;
+    color: white;
   }
+
+  .app .search input::placeholder {
+    color: rgb(203, 207, 207);
+  }
+  
+  .top-container {
+    display: flex;
+    justify-content: center;
+  }
+  /* Define CSS classes for different weather conditions */
+.clear {
+    background-image: url('./assets/clear.jpg');
+  }
+  
+.rain {
+    background-image: url('./assets/rain.jpg');
+  }
+
+.clouds {
+    background-image: url('./assets/clouds.jpg');
+  }
+
+.snow {
+    background-image: url('./assets/snow.jpeg');
+  }
+
+.drizle {
+    background-image: url('./assets/drizzle.jpeg');
+  } 
+
+.thunderstorm {
+    background-image: url('./assets/thunderstorm.jpeg');
+  } 
+
+.haze {
+  background-image: url('./assets/haze.jpeg');
+  background-size: cover;
+  }
+
+.default {
+  background-image: url('./assets/weather_bg.jpg');
+}
+  /* Add more classes for other weather conditions */
   
