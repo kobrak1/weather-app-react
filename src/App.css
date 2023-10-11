@@ -1,41 +1,33 @@
 :root {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-image: url('./assets/weather_bg.jpg');
-    background-size: cover;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .app {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(128, 128, 128, .3);
-    backdrop-filter: blur(5px);
+    align-items: center; /* Vertically center */
+    max-width: 30%;
+    height: 530px;
     margin: 0 auto;
-    height: auto;
-    width: 400px;
-    border-radius: 1.5rem;
-}
-
-.app .search {
-    text-align: center;
-    padding: 1rem;
-}
-.app .search input {
-    height: 1.5rem;
-    width: 12rem;
+    margin-top: 2rem;
+    background-color: rgb(211, 211, 211, .2);
     border-radius: 1rem;
-    border-color: rgb(158, 233, 233);
-    background-color: rgb(211, 211, 211, .3);
-    color: #f1f1f1;
-    padding-left: 1rem;
-}
-.app .search input::placeholder {
-    color: #f1f1f1;
-}
+  }
+
+  .app .search input {
+    border-radius: 1rem;
+    border: none;
+    background-color: rgba(72, 72, 72, 0.2);
+    height: 2rem;
+    padding-left: .7rem;
+    margin: 3rem 0 2rem 0;
+  }
+  

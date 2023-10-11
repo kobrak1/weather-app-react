@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import axios from 'axios';
+import './App.css'
 
 function App() {
   const [data, setData] = useState({});
-  const [location, setLocation] = useState('Ankara');
+  const [location, setLocation] = useState('Moscow');
 
   const API_KEY = import.meta.env.VITE_API_KEY;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}&units=metric`;
