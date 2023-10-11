@@ -49,39 +49,48 @@ body {
   .values {
     display: flex;
   }
+
+  .name p {
+    margin: 0;
+  }
   /* Define CSS classes for different weather conditions */
-.clear {
+  .clear {
     background-image: url('./assets/clear.jpg');
   }
-  
-.rain {
+
+  .rain {
     background-image: url('./assets/rain.jpg');
   }
 
-.clouds {
+  .clouds {
     background-image: url('./assets/clouds.jpg');
   }
 
-.snow {
+  .snow {
     background-image: url('./assets/snow.jpeg');
   }
 
-.drizle {
+  .drizle {
     background-image: url('./assets/drizzle.jpeg');
   } 
 
-.thunderstorm {
+  .thunderstorm {
     background-image: url('./assets/thunderstorm.jpeg');
   } 
 
-.haze {
-  background-image: url('./assets/haze.jpeg');
-  background-size: cover;
+  .haze {
+    background-image: url('./assets/haze.jpeg');
+    background-size: cover;
   }
 
-.default {
-  background-image: url('./assets/bg_default2.jpg');
-  background-size: cover;
-}
+  .default {
+    background-image: url('./assets/bg_default2.jpg');
+    background-size: cover;
+  }
   /* Add more classes for other weather conditions */
-  
+
+  /* sperator styling */
+  .seperator {
+    border-top: 1px solid rgb(235, 234, 234);
+    margin: 1rem -2rem;
+  }

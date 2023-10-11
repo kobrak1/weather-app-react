@@ -74,8 +74,9 @@ function App() {
       </div>
       <div className="top-container">
         <div className="name">
-          <p style={{color:'white', paddingLeft:'1rem', fontSize:'25px'}}> {data ? data.name : null } </p>
+          <p style={{color:'white', paddingLeft:'.7rem', fontSize:'25px'}}> {data ? data.name : null } </p>
         </div>
+        <div className="seperator"></div>
         <div className="values">
           <div className="temp">
             {data.main ? <p style={mystyle}>{data.main.temp.toFixed()}°C</p> : null}
@@ -84,6 +85,12 @@ function App() {
             <img style={{paddingBottom:'.5rem'}} src={weatherIconUrl} width='50px'/>
             <p style={{margin:'0', color:'white', paddingLeft:'.5rem'}}> {data.weather?.[0]?.main} </p>
           </div>
+        </div>
+        <div className="seperator"></div>
+        <div className="feelsLike">
+          <p style={{color:'white', paddingLeft:'.7rem', fontSize:'16px'}}>Feels like  { data.main ? data.main.feels_like.toFixed() : null} °C</p>
+          <p style={{color:'white', paddingLeft:'.7rem', fontSize:'16px'}}>Humidity  { data.main ? data.main.humidity.toFixed() : null} %</p>
+          <p style={{color:'white', paddingLeft:'.7rem', fontSize:'16px'}}>Wind  { data.main ? data.wind.speed.toFixed() : null} m/s</p>
         </div>
       </div>
     </div>
