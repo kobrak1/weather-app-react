@@ -12,6 +12,7 @@ This is a simple React weather app that allows users to check the weather condit
 ## Technologies Used
 
 - React
+- CSS3
 - Axios (for making HTTP requests)
 - OpenWeatherMap API
 
