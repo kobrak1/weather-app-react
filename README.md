@@ -1,6 +1,6 @@
 # Weather App
 
-![Weather App Screenshot](app-screenshot.png)
+![ss_weather_app](https://github.com/kobrak1/weather-app-react/assets/114083611/d5071285-8176-449c-aff7-986e2535a6e7)
 
 This is a simple React weather app that allows users to check the weather conditions for a specific location. It displays the temperature, weather icon, feels-like temperature, humidity, and wind speed.
 
