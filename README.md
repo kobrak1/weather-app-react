@@ -27,13 +27,13 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/weather-app.git
+   git clone https://github.com/yourusername/weather-app-react.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd weather-app
+   cd weather-app-react
    ```
 
 3. Install the dependencies:
